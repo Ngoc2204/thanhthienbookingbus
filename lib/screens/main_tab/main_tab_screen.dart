@@ -77,10 +77,8 @@ class _MainTabScreenState extends State<MainTabScreen>
 
   void _onTabTapped(int index) {
     if (_selectedIndex != index) {
-      // Haptic feedback
       HapticFeedback.lightImpact();
 
-      // Animation
       _animationController.forward().then((_) {
         _animationController.reverse();
       });

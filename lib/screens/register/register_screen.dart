@@ -100,7 +100,6 @@ class _RegisterScreenState extends State<RegisterScreen> with TickerProviderStat
         _isLoading = true;
       });
 
-      // Simulate API call
       await Future.delayed(const Duration(seconds: 2));
 
       setState(() {
@@ -209,7 +208,6 @@ class _RegisterScreenState extends State<RegisterScreen> with TickerProviderStat
                             children: [
                               const SizedBox(height: 20),
 
-                              // Welcome Text with Icon
                               Row(
                                 children: [
                                   Container(

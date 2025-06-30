@@ -82,7 +82,6 @@ class _LoginScreenState extends State<LoginScreen> with TickerProviderStateMixin
         _isLoading = true;
       });
 
-      // Simulate API call
       await Future.delayed(const Duration(seconds: 2));
 
       setState(() {
@@ -119,7 +118,6 @@ class _LoginScreenState extends State<LoginScreen> with TickerProviderStateMixin
         child: SafeArea(
           child: Column(
             children: [
-              // Custom App Bar
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Row(
@@ -152,12 +150,11 @@ class _LoginScreenState extends State<LoginScreen> with TickerProviderStateMixin
                         ),
                       ),
                     ),
-                    const SizedBox(width: 48), // Balance the back button
+                    const SizedBox(width: 48),
                   ],
                 ),
               ),
 
-              // Main Content
               Expanded(
                 child: FadeTransition(
                   opacity: _fadeAnimation,
@@ -181,7 +178,6 @@ class _LoginScreenState extends State<LoginScreen> with TickerProviderStateMixin
                             children: [
                               const SizedBox(height: 20),
 
-                              // Welcome Text with Icon
                               Row(
                                 children: [
                                   Container(
@@ -374,7 +370,6 @@ class _LoginScreenState extends State<LoginScreen> with TickerProviderStateMixin
 
                               const SizedBox(height: 32),
 
-                              // Divider
                               Row(
                                 children: [
                                   Expanded(child: Divider(color: Colors.grey.shade300)),

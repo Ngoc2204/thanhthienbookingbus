@@ -188,7 +188,7 @@ class _ParcelScreenState extends State<ParcelScreen> with TickerProviderStateMix
 
                               const SizedBox(height: 24),
 
-                              // Package Information Card
+                              // Thông tin kiện hàng
                               _buildSectionCard(
                                 title: 'Thông tin kiện hàng',
                                 icon: Icons.inventory_2_outlined,

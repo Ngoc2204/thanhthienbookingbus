@@ -138,14 +138,14 @@ class _BookingScreenState extends State<BookingScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // Seat selection section
+                    // Chọn ghế ngồi
                     _buildSectionHeader('Chọn ghế ngồi', Icons.event_seat),
                     const SizedBox(height: 16),
                     _buildSeatLayout(),
 
                     const SizedBox(height: 32),
 
-                    // Customer info section
+                    // Thông tin khách hàng
                     _buildSectionHeader('Thông tin hành khách', Icons.person_outline),
                     const SizedBox(height: 16),
 

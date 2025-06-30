@@ -116,7 +116,6 @@ final List<Map<String, dynamic>> demoTrips = [
     'time': '18:00 • 22:30',
     'price': '180.000đ',
   },
-  // Các chuyến cho các ngày tiếp theo...
   {
     'route': 'Chu Lai → Đà Nẵng',
     'from': 'Chu Lai',
@@ -358,7 +357,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      // Search Card with modern design
+                      // Tìm kiếm
                       _buildSearchCard(),
 
                       const SizedBox(height: 24),
@@ -366,7 +365,6 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
                       const SizedBox(height: 32),
 
-                      // Search Results or Featured Trips
                       if (_searchResults.isNotEmpty) ...[
                         _buildSectionTitle('Kết quả tìm kiếm', _searchResults.length),
                         const SizedBox(height: 16),
@@ -438,7 +436,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             ),
             const SizedBox(height: 20),
 
-            // From and To with swap button
+            // Điểm đi, điểm đến và nuút hoán đổi
             Row(
               children: [
                 Expanded(child: _buildLocationField(_fromController, 'Điểm đi', Icons.my_location)),

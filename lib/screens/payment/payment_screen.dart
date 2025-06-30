@@ -116,7 +116,6 @@ class _PaymentScreenState extends State<PaymentScreen> with TickerProviderStateM
         child: SafeArea(
           child: Column(
             children: [
-              // Custom AppBar
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                 child: Row(
@@ -317,7 +316,6 @@ class _PaymentScreenState extends State<PaymentScreen> with TickerProviderStateM
 
           const SizedBox(height: 20),
 
-          // Online Payment Option
           _buildPaymentOption(
             value: 'online',
             title: 'Thanh toán trực tuyến',
@@ -325,7 +323,6 @@ class _PaymentScreenState extends State<PaymentScreen> with TickerProviderStateM
             gradient: [Color(0xFF667eea), Color(0xFF764ba2)],
           ),
 
-          // Online Payment Methods (when selected)
           if (selectedMethod == 'online') ...[
             const SizedBox(height: 16),
             _buildOnlinePaymentMethods(),
@@ -333,7 +330,6 @@ class _PaymentScreenState extends State<PaymentScreen> with TickerProviderStateM
 
           const SizedBox(height: 16),
 
-          // Cash Payment Option
           _buildPaymentOption(
             value: 'cash',
             title: 'Thanh toán tiền mặt khi nhận',

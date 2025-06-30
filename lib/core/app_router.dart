@@ -36,9 +36,5 @@ final GoRouter appRouter = GoRouter(
       path: '/support',
       builder: (context, state) => const SupportScreen(),
     ),
-    // GoRoute(
-    //   path: '/booking',
-    //   builder: (context, state) => const BookingScreen(),
-    // ),
   ],
 );
