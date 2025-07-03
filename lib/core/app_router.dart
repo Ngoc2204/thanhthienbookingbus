@@ -4,6 +4,7 @@ import '../screens/login/login_screen.dart';
 import '../screens/main_tab/main_tab_screen.dart';
 import '../screens/my_tickets/my_tickets_screen.dart';
 import '../screens/profile/edit/profile_edit_screen.dart';
+import '../screens/profile/settings/settings_screen.dart';
 import '../screens/register/register_screen.dart';
 import '../screens/support/support_screen.dart';
 
@@ -36,5 +37,10 @@ final GoRouter appRouter = GoRouter(
       path: '/support',
       builder: (context, state) => const SupportScreen(),
     ),
+    GoRoute(
+      path: '/profile/settings',
+      builder: (context, state) => const SettingsScreen(),
+    ),
+
   ],
 );

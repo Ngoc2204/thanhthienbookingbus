@@ -387,7 +387,7 @@ class _ProfileScreenState extends State<ProfileScreen>
         'title': 'Cài đặt',
         'subtitle': 'Tùy chỉnh ứng dụng',
         'color': const Color(0xFF607D8B),
-        'route': '/settings',
+        'route': '/profile/settings',
       },
     ];
 
